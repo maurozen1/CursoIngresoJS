@@ -9,45 +9,28 @@ Si la suma es menor a 50 ,además de mostrar el resultado, muestro el mensaje
 
 function mostrar()
 {
-    var numero_1;
-    var numero_2;
-    var division = numero_1/numero_2;
-    var suma = numero_1 + numero_2;
+    var numero1, numero2, division, suma;
+    numero1 = prompt("Ingrese un número.");
+    numero1 = parseInt(numero1);
+    numero2 = prompt("Ingrese un número.");
+    numero2 = parseInt(numero2);
+    suma = numero1 + numero2;
 
-    numero_1 = parseInt(numero_1);
-    numero_2 = parseInt(numero_2);
-    suma = parseInt(suma);
+    if (numero1 == numero2) {
+        alert("Los numeros ingresados son "+ numero1 +" y "+numero2);
+    } else {
+          if (numero1 > numero2) {
+            division = numero1 / numero2;
+            division = parseInt(division);
+            alert("La división es : "+ division);
+        } else {
+            if (numero1 < numero2 && suma < 50){
+                alert("La suma es: "+suma+" y es menor a 50");
+            } else{
+                alert("La suma es: "+ suma);
+            }
 
-    numero_1= prompt("Ingrese número");
-    numero_2= prompt("Ingrese número");
-
-    if(numero_1 == numero_2){
-
-        alert(numero_1 + numero_2);
-
-    }else if(numero_1 > numero_2) {
-
-        alert(division);
-
-        }else {
-
-            
         }
-        }
-            
-        }
-            
-        
-        
-
-
-        
-
-
-        
-    
-    
-
-
+    }
 
 }

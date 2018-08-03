@@ -3,7 +3,7 @@ function mostrar()
 var dia;
 
 dia = prompt("Ingresar dia de la semana");
-
+dia = dia.toLocaleLowerCase();
 switch(dia)
     {
         case "sabado":
